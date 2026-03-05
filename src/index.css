@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 235 35% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 235 30% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 235 30% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 235 25% 20%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 235 20% 22%;
+    --muted-foreground: 220 15% 55%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 235 20% 25%;
+    --input: 235 20% 25%;
+    --ring: 25 95% 53%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 235 35% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 25 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 235 25% 18%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 235 20% 25%;
+    --sidebar-ring: 25 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
